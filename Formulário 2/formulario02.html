@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://images.vexels.com/media/users/3/153915/isolated/lists/299f2a5c486929ef6488503ecdb8c91e-icone-de-traco-colorido-de-prancheta-de-esportes.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário 02</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Formulário</legend>
+            <div><input type="text" name="nome" placeholder="Digite seu nome" required></div>
+            <div><input type="text" name="e-mail" id="email" placeholder="Digite seu e-mail" required></div>
+            <div>
+                <select name="Lista" id="lista">
+                    <option value="" disabled selected>Qual sua idade?</option>
+                    <option value="8 a 12">8 a 12</option>
+                    <option value="13 a 20">13 a 20</option>
+                    <option value="21 a 29">21 a 29</option>
+                    <option value="30">30+</option>
+
+                </select>
+            </div>
+            
+            <div>
+                <h2>Qual sua cidade?</h2>
+            </div>
+            <div class="cidades">
+                <div>
+                    <input type="radio" name="cidade" value="Manaus" checked><span>Manaus</span>
+                </div>
+                <div>
+                    <input type="radio" name="cidade" value="São Paulo"><span>São Paulo</span>
+                </div>
+                <div>
+                    <input type="radio" name="cidade" value="Rio de Janeiro"><span>Rio de Janeiro</span>
+                </div>
+            </div>
+
+            <div>
+                <h2>Que área voçê atual na programação?</h2>
+            </div>
+            <div class="cidades">
+                <div>
+                    <input type="checkbox" name="atuação" value="atuação" checked><span>Front-end</span>
+                </div>
+                <div>
+                    <input type="checkbox" name="atuação" value="atuação"><span>Back-end</span>
+                </div>
+                <div>
+                    <input type="checkbox" name="atuação" value="atuação"><span>Full-Stack</span>
+                </div>
+            </div>
+
+            <div>
+                <textarea name="resumo" id="resumo" cols="30" rows="10" placeholder="Compartilhar alguma ideia?"></textarea>
+            </div>
+
+            <div>
+                <input type="submit" name="acao" value="Enviar">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
